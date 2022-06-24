@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Noto+Sans+JP:wght@400;700&display=swap');
+$pink: #FFE8E3;
+$darkPink: #FF8695;
+$brown: #9E5921;
+body {
+    display: flex;
+    background: $pink;
+}
+
+.header {
+    position: fixed;
+    width: 25%;
+    background-color: $brown;
+    color: $pink;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Forum', cursive;
+    font-size: 3.5em;
+    text-align: center;
+    align-items: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 20px auto 40px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: 'Forum', cursive;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+.content {
+    width: 75%;
+    margin-left: 25%;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: $pink;
+    color: $brown;
+    height: 100%;
+    padding: 40px;
+}
+
+.poem {
+    white-space: pre-wrap;
+    padding-top: 40px;
+    line-height: 1.5;
+}
+
+.image {
+    max-width: 100px;
+}
+
+button {
+    background-color: $pink;
+    color: $brown;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: .3em;
+    font-family: 'Noto Sans JP', sans-serif;
+
+    &:hover {
+        opacity: .9;
+    }
+}
+
+.author {
+    font-size: .8em;
+}
